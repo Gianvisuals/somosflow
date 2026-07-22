@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$omo$ Flow | Zapatillas urbanas — Catálogo</title>
+<link rel="icon" type="image/png" href="fotos/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--deep:oklch(.09 .014 150);--surface:oklch(.18 .022 150);--line:oklch(.29 .02 150);--lime:oklch(.86 .22 132);--lime2:oklch(.72 .18 132);--gold:oklch(.82 .145 85);--ink:oklch(.97 .004 150);--muted:oklch(.75 .012 150);--dim:oklch(.58 .012 150);--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:oklch(.13 .018 150);color:var(--ink);font:400 16px/1.55 Inter,system-ui,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(70% 55% at 8% 0%,oklch(.26 .05 132/.3),transparent 70%),radial-gradient(50% 40% at 90% 20%,oklch(.24 .05 85/.18),transparent 70%);pointer-events:none}
+body:after{content:"$";position:fixed;right:-8vw;bottom:-18vw;z-index:-1;font:52vw/1 Anton,sans-serif;color:oklch(.86 .22 132/.035);pointer-events:none}
+a{color:inherit;text-decoration:none}
+img{display:block}
+.wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+@keyframes pulse{50%{transform:scale(1.08);opacity:.75}}
+@keyframes float{50%{transform:translateY(-6px)}}
+@keyframes ring{to{transform:scale(1.5);opacity:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+/* Header */
+header{position:fixed;inset:0 0 auto;z-index:20;background:oklch(.11 .014 150/.86);backdrop-filter:blur(14px);border-bottom:1px solid oklch(.3 .02 150/.7)}
+nav.top{width:min(1180px,calc(100% - 48px));margin:auto;min-height:74px;display:flex;align-items:center;flex-wrap:wrap;gap:10px 26px;padding:6px 0}
+.logo-img{height:52px;width:auto}
+nav.top .links{display:flex;gap:8px 22px;flex-wrap:wrap;margin-left:6px}
+nav.top .links a{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:8px 0}
+nav.top .links a:hover{color:var(--lime)}
+.wa-btn{margin-left:auto;background:var(--lime);color:var(--deep)!important;padding:12px 18px;font-weight:800;font-size:.84rem;display:inline-flex;align-items:center;gap:8px;transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.wa-btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px oklch(.86 .22 132/.3)}
+main{padding-top:74px}
+/* Hero */
+.hero{padding:76px 0 72px;position:relative;overflow:hidden;background:radial-gradient(80% 90% at 70% 42%,oklch(.25 .04 85/.35),transparent 68%)}
+.hero .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:center;gap:56px}
+.hero-kick{color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.hero h1{font:400 clamp(4rem,9vw,7.5rem)/.88 Anton,sans-serif;text-transform:uppercase;margin:24px 0 0;letter-spacing:-.015em}
+.hero h1 span{display:block}
+.hero h1 .lime{color:var(--lime)}
+.hero h1 .flowword{display:inline-block;position:relative;color:var(--lime)}
+.hero h1 .flowword:after{content:'';position:absolute;left:0;right:3%;bottom:-7px;height:11px;background:var(--lime);clip-path:polygon(0 28%,10% 12%,20% 28%,32% 10%,42% 26%,54% 6%,66% 23%,80% 9%,92% 26%,100% 12%,100% 53%,86% 43%,76% 70%,64% 47%,52% 76%,40% 49%,28% 71%,16% 45%,5% 65%,0 54%)}
+.hero p.lead{max-width:49ch;color:var(--muted);font-size:1.05rem;margin:30px 0 28px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn-lime{background:var(--lime);color:var(--deep)!important;padding:12px 18px;font-weight:800;font-size:.84rem;display:inline-flex;align-items:center;gap:8px;transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.btn-lime:hover{transform:translateY(-3px);box-shadow:0 12px 28px oklch(.86 .22 132/.3)}
+.btn-ghost{border:1px solid var(--line);padding:12px 18px;font-weight:700;transition:.2s var(--ease)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.hero-art{position:relative;isolation:isolate}
+.hero-art:before{content:'';position:absolute;inset:-10%;border-radius:50%;background:radial-gradient(circle,oklch(.86 .22 132/.18),transparent 65%);filter:blur(25px);z-index:-1;animation:pulse 4s ease-in-out infinite}
+.hero-art img{width:100%;aspect-ratio:1.16;object-fit:cover;border:1px solid oklch(.5 .08 85/.55);box-shadow:20px 28px 80px oklch(0 0 0/.45);transform:rotate(2deg);transition:transform .5s var(--ease)}
+.hero-art img:hover{transform:rotate(0) scale(1.025)}
+.hero-tag{position:absolute;bottom:-18px;left:-22px;background:var(--lime);color:var(--deep);padding:15px 18px;font:1.35rem Anton,sans-serif;transform:rotate(-5deg);box-shadow:8px 10px 0 var(--deep)}
+/* Beneficios */
+.benefits{background:var(--deep);border-block:1px solid var(--line)}
+.benefits .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px;padding:28px 0}
+.benefit{display:flex;gap:12px;align-items:center}
+.benefit .ic{font-size:1.45rem;color:var(--gold)}
+.benefit b{display:block;font-size:.9rem}
+.benefit small{color:var(--dim);font-size:.76rem}
+/* Secciones */
+.feat{padding:96px 0 88px;scroll-margin-top:84px}
+.sec-head{margin-bottom:48px}
+.kick{display:block;color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px}
+.drip-title{font:400 clamp(2rem,5vw,3.6rem)/1.03 Anton,sans-serif;text-transform:uppercase;position:relative;display:inline-block;margin:0;padding-bottom:8px}
+.drip-title:after{content:'';position:absolute;left:2px;top:100%;height:17px;width:70%;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 38%,95% 42%,94% 100%,91% 48%,84% 45%,82% 78%,79% 45%,70% 41%,69% 100%,65% 48%,57% 44%,54% 70%,51% 44%,43% 40%,41% 100%,38% 45%,28% 43%,26% 83%,22% 46%,14% 42%,12% 100%,9% 44%,0 40%)}
+.sec-sub{color:var(--muted);max-width:62ch;margin:30px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px}
+.drip-sep{height:28px;clip-path:polygon(0 0,100% 0,100% 38%,95% 42%,94% 100%,91% 48%,84% 45%,82% 78%,79% 45%,70% 41%,69% 100%,65% 48%,57% 44%,54% 70%,51% 44%,43% 40%,41% 100%,38% 45%,28% 43%,26% 83%,22% 46%,14% 42%,12% 100%,9% 44%,0 40%)}
+/* Card */
+.card{background:var(--surface);border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s var(--ease),border-color .3s var(--ease)}
+.card:hover{transform:translateY(-5px);border-color:var(--lime2)}
+.card-img{aspect-ratio:1;overflow:hidden;background:var(--deep);position:relative}
+.card-img:after{content:'SOMO$ FLOW';position:absolute;right:8px;bottom:7px;color:var(--gold);font:10px Anton,sans-serif;opacity:.6}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;top:10px;left:10px;z-index:2;background:var(--gold);color:var(--deep);font:.72rem/1 Anton,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:6px 9px;transform:rotate(-3deg)}
+.card-body{padding:16px;display:flex;flex-direction:column;flex:1}
+.card-meta{color:var(--gold);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.card-name{font-size:1rem;margin:8px 0;font-weight:600;line-height:1.3}
+.card-price{font:1.3rem Anton,sans-serif;color:var(--lime)}
+.card-sizes{font-size:.78rem;color:var(--muted);margin:12px 0 15px}
+.card-wa{margin-top:auto;background:var(--lime);color:var(--deep)!important;padding:11px 8px;font-weight:800;font-size:.78rem;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .2s var(--ease)}
+.card-wa:hover{transform:translateY(-2px)}
+/* Catálogo filtros */
+#catalogo{padding:96px 0 88px;scroll-margin-top:84px}
+.search-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.search-box{border:1px solid var(--line);background:var(--surface);padding:11px 14px;color:var(--dim);flex:1;min-width:230px;max-width:360px;display:flex;gap:8px;align-items:center}
+.search-box input{background:none;border:0;outline:0;color:var(--ink);width:100%;font:inherit}
+.count{color:var(--dim);font-size:.84rem;margin-left:auto}
+.filter-row{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.filter-label{color:var(--gold);font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;min-width:44px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:8px 12px;font-weight:700;font-size:.8rem;cursor:pointer;font-family:inherit;transition:.15s}
+.chip:hover{border-color:var(--lime);color:var(--lime)}
+.chip.active{background:var(--lime);border-color:var(--lime);color:var(--deep)}
+.no-results{padding:40px 0;color:var(--muted)}
+/* Cómo comprar */
+.como{padding:100px 0;background:var(--deep);scroll-margin-top:84px}
+.como .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.step{border-top:1px solid var(--line);padding-top:20px}
+.step strong{font:3.4rem Anton,sans-serif;color:oklch(.82 .145 85/.35)}
+.step h3{font:1.3rem Anton,sans-serif;text-transform:uppercase;margin:9px 0}
+.step p{color:var(--muted);max-width:30ch;margin:0}
+/* Sobre */
+.sobre{padding:96px 0;scroll-margin-top:84px}
+.sobre .wrap{width:min(760px,calc(100% - 48px));text-align:center}
+.sobre .crown{font-size:2rem;color:var(--gold);display:block;margin-bottom:14px}
+.sobre h2{font:400 clamp(1.8rem,4vw,2.8rem)/1.03 Anton,sans-serif;text-transform:uppercase;margin:0 0 22px}
+.sobre p{color:var(--muted);font-size:1.05rem;margin:0}
+/* Reseñas */
+.rev{padding:0 0 96px}
+.rev .grid-r{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.review{background:var(--surface);border:1px solid var(--line);padding:22px;border-radius:12px 12px 12px 3px;transition:transform .3s var(--ease),border-color .3s var(--ease)}
+.review:hover{transform:translateY(-6px) rotate(-1deg);border-color:var(--gold)}
+.review .rh{display:flex;gap:10px;align-items:center;margin-bottom:16px}
+.review .av{width:38px;height:38px;background:var(--lime);color:var(--deep);border-radius:50%;display:grid;place-items:center;font:1.1rem Anton,sans-serif}
+.review .rt{background:var(--deep);padding:13px;border-radius:8px;color:var(--muted)}
+.review .stars{color:var(--gold);letter-spacing:3px;margin-top:14px}
+.review small{color:var(--lime);display:block}
+/* FAQ */
+.faq{padding:100px 0;background:var(--deep);scroll-margin-top:84px}
+.faq .wrap{width:min(760px,calc(100% - 48px))}
+.faq-head{text-align:center;margin-bottom:44px}
+.faq-item{border:1px solid var(--line);background:var(--surface);margin-bottom:10px}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:18px 20px;text-align:left;font:700 .95rem/1.4 Inter,system-ui,sans-serif;color:var(--ink);background:none;border:0;cursor:pointer}
+.faq-ico{font:1.3rem/1 Anton,sans-serif;color:var(--lime);flex-shrink:0;transition:transform .3s var(--ease)}
+.faq-item.open .faq-ico{transform:rotate(45deg)}
+.faq-item.open .faq-q{color:var(--lime)}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s var(--ease)}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a>div{overflow:hidden;min-height:0}
+.faq-a p{padding:0 20px 18px;margin:0;color:var(--muted)}
+/* Footer */
+footer{padding:65px 0 28px;background:var(--deep);border-top:1px solid var(--line)}
+footer .cols{width:min(1180px,calc(100% - 48px));margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px}
+footer h4{color:var(--gold);font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;margin:0 0 15px}
+footer .fcol a,footer .fcol p{color:var(--muted);font-size:.88rem;margin:0}
+footer .fcol{display:flex;flex-direction:column;gap:9px}
+footer .logo-img{height:56px;margin-bottom:8px}
+.foot-bottom{width:min(1180px,calc(100% - 48px));margin:45px auto 0;border-top:1px solid var(--line);padding-top:20px;color:var(--dim);font-size:.75rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+/* FAB */
+.fab{position:fixed;right:22px;bottom:22px;z-index:30;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--lime);color:var(--deep)!important;font-size:26px;box-shadow:0 12px 35px oklch(.86 .22 132/.4);animation:float 3s ease-in-out infinite}
+.fab:after{content:'';position:absolute;inset:-8px;border:1px solid var(--lime);border-radius:50%;opacity:.5;animation:ring 2.6s var(--ease) infinite}
+
+/* ═══════════ MOBILE ═══════════ */
+@media(max-width:860px){
+  nav.top{min-height:64px;gap:8px 16px}
+  .logo-img{height:42px}
+  nav.top .links{order:3;width:100%;margin-left:0;gap:6px 16px;justify-content:center}
+  nav.top .links a{font-size:.72rem;padding:4px 0}
+  .wa-btn{padding:10px 14px;font-size:.78rem}
+  main{padding-top:64px}
+  .hero{padding:48px 0 44px}
+  .hero .wrap{gap:36px}
+  .hero h1{font-size:clamp(3.2rem,15vw,5rem)}
+  .hero-art{margin-top:8px}
+  .hero-tag{font-size:1.05rem;padding:11px 14px;left:-8px;bottom:-14px}
+  .feat{padding:60px 0 52px}
+  #catalogo{padding:60px 0 52px}
+  .como{padding:64px 0}
+  .sobre{padding:60px 0}
+  .faq{padding:64px 0}
+  .sec-head{margin-bottom:34px}
+  .drip-title:after{width:85%}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  #catGrid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .card-body{padding:13px}
+  .card-name{font-size:.92rem}
+  .card-wa{font-size:.72rem;padding:10px 6px}
+  .search-box{max-width:100%}
+  .count{margin-left:0;width:100%}
+  .filter-row{gap:6px}
+  .chip{padding:7px 10px;font-size:.76rem}
+  footer .cols{gap:24px}
+  .foot-bottom{flex-direction:column;gap:6px}
+  .fab{width:54px;height:54px;right:16px;bottom:16px;font-size:23px}
+}
+@media(max-width:420px){
+  .hero h1{font-size:clamp(2.8rem,17vw,4rem)}
+  .grid,#catGrid{grid-template-columns:repeat(2,1fr)}
+  .hero-cta{width:100%}
+  .hero-cta a{flex:1;justify-content:center}
+}
+
+/* Franja de precio único */
+.price-strip{background:var(--deep);border-block:1px solid var(--line);padding:44px 0;position:relative;overflow:hidden}
+.price-strip:before{content:'$';position:absolute;left:-2vw;top:50%;transform:translateY(-50%);font:22vw/1 Anton,sans-serif;color:oklch(.82 .145 85/.05);pointer-events:none}
+.price-strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;position:relative}
+.ps-left{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.ps-kick{color:var(--gold);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+.ps-price{font:400 clamp(2.6rem,7vw,4.6rem)/1 Anton,sans-serif;color:var(--lime);margin:0;position:relative;display:inline-block;padding-bottom:6px}
+.ps-price:after{content:'';position:absolute;left:0;top:100%;height:14px;width:88%;background:var(--lime);clip-path:polygon(0 0,100% 0,100% 38%,95% 42%,94% 100%,91% 48%,84% 45%,82% 78%,79% 45%,70% 41%,69% 100%,65% 48%,57% 44%,54% 70%,51% 44%,43% 40%,41% 100%,38% 45%,28% 43%,26% 83%,22% 46%,14% 42%,12% 100%,9% 44%,0 40%)}
+.ps-label{font:400 clamp(1.1rem,2.4vw,1.6rem)/1.1 Anton,sans-serif;text-transform:uppercase;color:var(--ink)}
+.ps-notes{display:flex;flex-direction:column;gap:8px;max-width:40ch}
+.ps-note{color:var(--muted);font-size:.9rem;margin:0;display:flex;gap:9px;align-items:flex-start}
+.ps-note b{color:var(--ink);font-weight:700}
+.ps-note .ic{color:var(--gold);flex-shrink:0}
+@media(max-width:860px){.price-strip{padding:32px 0}.price-strip .wrap{gap:20px}.ps-notes{max-width:none}}
+</style>
+</head>
+<body>
+<header>
+<nav class="top">
+<a href="#inicio" aria-label="Inicio"><img class="logo-img" src="fotos/logo.png" alt="$omo$ Flow"></a>
+<div class="links">
+<a href="#catalogo">Catálogo</a>
+<a href="#destacadas">Destacadas</a>
+<a href="#masvendido">Lo más vendido</a>
+<a href="#como">Cómo comprar</a>
+<a href="#faq">FAQ</a>
+</div>
+<a target="_blank" class="wa-btn" href="https://api.whatsapp.com/send?phone={WA}&text=%F0%9F%91%91%20%C2%A1Hola%20%24omo%24%20Flow%21%20Tengo%20una%20consulta%20sobre%20las%20zapatillas%20%F0%9F%91%9F">◉ WhatsApp</a>
+</nav>
+</header>
+
+<main id="inicio">
+<section class="hero">
+<div class="wrap">
+<div>
+<span class="hero-kick">♛ &nbsp; Zapatillas urbanas, del 36 al 45</span>
+<h1><span>Zapas con</span><span class="lime">corona</span><span>para tu</span><span class="flowword">flow</span></h1>
+<p class="lead">Catálogo visual de zapatillas $omo$ Flow. Elegís el modelo, consultás por WhatsApp y coordinamos pago y envío. Sin carrito, sin checkout.</p>
+<div class="hero-cta">
+<a href="#destacadas" class="btn-lime">▦ &nbsp; Ver zapatillas</a>
+<a href="#como" class="btn-ghost">Cómo comprar</a>
+</div>
+</div>
+<div class="hero-art">
+<img src="fotos/SF-001.jpg" alt="Zapatilla destacada $omo$ Flow">
+<div class="hero-tag">AIR MAX 1 - NEGRA CON BLANCO</div>
+</div>
+</div>
+</section>
+
+<section class="benefits"><div class="wrap">
+<div class="benefit"><span class="ic">♧</span><div><b>Envíos a todo el país</b><small>Correo y moto en CABA</small></div></div>
+<div class="benefit"><span class="ic">↻</span><div><b>Cambios sin drama</b><small>Hasta 15 días</small></div></div>
+<div class="benefit"><span class="ic">$</span><div><b>Transferencia o efectivo</b><small>Coordinamos por chat</small></div></div>
+<div class="benefit"><span class="ic">◉</span><div><b>Atención por WhatsApp</b><small>Todos los días</small></div></div>
+</div></section>
+
+<section class="price-strip">
+<div class="wrap">
+<div class="ps-left">
+<div>
+<span class="ps-kick">♛ &nbsp; Precio único</span>
+<h2 class="ps-price">$120.000</h2>
+</div>
+<span class="ps-label">todas las<br>zapatillas</span>
+</div>
+<div class="ps-notes">
+<p class="ps-note"><span class="ic">◈</span><span>Mismo precio para <b>todos los modelos</b> del catálogo, sin importar el talle.</span></p>
+<p class="ps-note"><span class="ic">◉</span><span>Promos y descuentos <b>solo por Instagram</b>.</span></p>
+<p class="ps-note"><span class="ic">✆</span><span>Pedidos y coordinación <b>por WhatsApp</b>.</span></p>
+</div>
+</div>
+</section>
+
+<section id="catalogo">
+<div class="wrap">
+<div class="sec-head">
+<span class="kick">Todo el stock, todo junto</span>
+<h2 class="drip-title" style="--accent:var(--lime)">Catálogo completo</h2>
+<p class="sec-sub">Los modelos disponibles, todos a $120.000. Este catálogo se actualiza solo. Filtrá por talle o tipo, o buscá por color o modelo. Los talles son informativos: confirmá disponibilidad por WhatsApp.</p>
+</div>
+<div class="search-row">
+<label class="search-box">⌕ <input id="q" placeholder="Buscar por modelo o color..." oninput="applyFilters()"></label>
+<span class="count" id="count"></span>
+</div>
+<div class="filter-row">
+<span class="filter-label">Talle</span>
+<button class="chip active" data-size="all" onclick="setSize(this,'all')">Todos</button>
+<button class="chip" data-size="36" onclick="setSize(this,'36')">36</button>
+<button class="chip" data-size="37" onclick="setSize(this,'37')">37</button>
+<button class="chip" data-size="38" onclick="setSize(this,'38')">38</button>
+<button class="chip" data-size="39" onclick="setSize(this,'39')">39</button>
+<button class="chip" data-size="40" onclick="setSize(this,'40')">40</button>
+<button class="chip" data-size="41" onclick="setSize(this,'41')">41</button>
+<button class="chip" data-size="42" onclick="setSize(this,'42')">42</button>
+<button class="chip" data-size="43" onclick="setSize(this,'43')">43</button>
+<button class="chip" data-size="44" onclick="setSize(this,'44')">44</button>
+<button class="chip" data-size="45" onclick="setSize(this,'45')">45</button>
+</div>
+<div class="filter-row">
+<span class="filter-label">Tipo</span>
+<button class="chip active" data-tipo="all" onclick="setTipo(this,'all')">Todas</button>
+<button class="chip" data-tipo="High" onclick="setTipo(this,'High')">High</button>
+<button class="chip" data-tipo="Low" onclick="setTipo(this,'Low')">Low</button>
+<button class="chip" data-tipo="Runner" onclick="setTipo(this,'Runner')">Runner</button>
+</div>
+<p class="no-results" id="noRes" style="display:none">No encontré modelos con ese filtro. Probá otro talle, tipo o SKU.</p>
+<div class="grid" id="catGrid"></div>
+</div>
+</section>
+
+<div class="drip-sep" style="background:var(--lime)"></div>
+
+<div id="destacadas-wrap"></div><div id="masvendido-wrap"></div><div id="running-wrap"></div><div id="high-wrap"></div>
+
+<section class="como" id="como">
+<div class="wrap">
+<div class="sec-head"><span class="kick">Fácil y directo</span><h2 style="font:400 clamp(2rem,5vw,3.6rem)/1.03 Anton,sans-serif;text-transform:uppercase;margin:0">Cómo comprar</h2></div>
+<div class="steps">
+<div class="step"><strong>01</strong><h3>Elegí tu modelo</h3><p>Navegá el catálogo, filtrá por talle o tipo y quedate con el par que te gusta.</p></div>
+<div class="step"><strong>02</strong><h3>Consultá por WhatsApp</h3><p>Tocá el botón del modelo y se abre WhatsApp con el mensaje ya listo para enviar.</p></div>
+<div class="step"><strong>03</strong><h3>Coordinamos pago y envío</h3><p>Transferencia o efectivo, y sale para donde estés.</p></div>
+</div>
+</div>
+</section>
+
+<section class="sobre" id="sobre"><div class="wrap">
+<span class="crown">♛</span>
+<h2>Sobre $omo$ Flow</h2>
+<p>Somos un catálogo de zapatillas urbanas hecho en CABA: modelos High, Low y Runner del 36 al 45, con fotos reales y stock que rota toda la semana. Sin carrito ni checkout: nos escribís por WhatsApp, te asesoramos con el talle y coordinamos pago y envío. La corona es tuya.</p>
+</div></section>
+
+<section class="rev"><div class="wrap">
+<div class="sec-head"><span class="kick">La calle habla</span><h2 style="font:400 clamp(2rem,5vw,3.6rem)/1.03 Anton,sans-serif;text-transform:uppercase;margin:0">Reseñas</h2></div>
+<div class="grid-r">
+<article class="review"><div class="rh"><span class="av">N</span><div><b>Nahuel R.</b><small>✓ vía WhatsApp</small></div></div><div class="rt">Llegó al toque y las zapas son un fuego total. Ya pedí las segundas 🔥👑</div><div class="stars">★★★★★</div></article>
+<article class="review"><div class="rh"><span class="av">C</span><div><b>Cami B.</b><small>✓ vía WhatsApp</small></div></div><div class="rt">La calidad se nota y la atención fue de 10. Me asesoraron con el talle.</div><div class="stars">★★★★★</div></article>
+<article class="review"><div class="rh"><span class="av">F</span><div><b>Fran M.</b><small>✓ vía WhatsApp</small></div></div><div class="rt">Compré por WhatsApp en 5 min. Fotos reales y envío rápido.</div><div class="stars">★★★★★</div></article>
+</div>
+</div></section>
+
+<section class="faq" id="faq"><div class="wrap">
+<div class="faq-head"><span class="kick">Antes de preguntar</span><h2 style="font:400 clamp(2rem,5vw,3.6rem)/1.03 Anton,sans-serif;text-transform:uppercase;margin:0">Preguntas frecuentes</h2></div>
+<div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cómo compro?<span class="faq-ico">+</span></button>
+<div class="faq-a"><div><p>Elegís el modelo, tocás "Consultar por WhatsApp" y se abre el chat con el mensaje ya armado, incluido el código del modelo. Te respondemos para coordinar todo. No hay carrito: la compra se cierra por WhatsApp.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Los talles que figuran están en stock?<span class="faq-ico">+</span></button>
+<div class="faq-a"><div><p>Son orientativos. Confirmamos disponibilidad exacta del talle por WhatsApp antes de cerrar el pedido.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Hacen envíos?<span class="faq-ico">+</span></button>
+<div class="faq-a"><div><p>Sí, a todo el país por correo y moto en CABA. Coordinamos el envío cuando confirmás la compra.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Cómo se paga?<span class="faq-ico">+</span></button>
+<div class="faq-a"><div><p>Transferencia o efectivo. Te pasamos los datos por WhatsApp cuando cerramos el pedido.</p></div></div></div><div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">¿Puedo cambiar el par?<span class="faq-ico">+</span></button>
+<div class="faq-a"><div><p>Sí, tenés hasta 15 días para cambios. Escribinos y lo resolvemos.</p></div></div></div>
+</div></section>
+
+</main>
+
+<footer>
+<div class="cols">
+<div class="fcol"><a href="#inicio"><img class="logo-img" src="fotos/logo.png" alt="$omo$ Flow"></a><p>Catálogo de zapatillas urbanas. La corona es tuya.</p></div>
+<div class="fcol"><h4>Tienda</h4><a href="#catalogo">Catálogo completo</a><a href="#destacadas">Destacadas</a><a href="#masvendido">Lo más vendido</a></div>
+<div class="fcol"><h4>Ayuda</h4><a href="#como">Cómo comprar</a><a href="#faq">Cambios y envíos</a></div>
+<div class="fcol"><h4>Contacto</h4><a target="_blank" href="https://api.whatsapp.com/send?phone={WA}&text=%F0%9F%91%91%20%C2%A1Hola%20%24omo%24%20Flow%21%20Tengo%20una%20consulta%20sobre%20las%20zapatillas%20%F0%9F%91%9F">◉ +54 11 2490-9087</a><p>Av. Corrientes 3200, CABA</p><p>Lun a sáb, 11 a 20 hs</p></div>
+</div>
+<div class="foot-bottom"><span>© 2026 $omo$ Flow</span><span>Pedidos 100% por WhatsApp. Sin carrito, sin checkout.</span></div>
+</footer>
+
+<a target="_blank" class="fab" href="https://api.whatsapp.com/send?phone={WA}&text=%F0%9F%91%91%20%C2%A1Hola%20%24omo%24%20Flow%21%20Tengo%20una%20consulta%20sobre%20las%20zapatillas%20%F0%9F%91%9F" aria-label="WhatsApp">◉</a>
+
+<script>
+// ══════════════ CONFIG ══════════════
+// WA: número de WhatsApp que recibe los pedidos.
+// Formato: código de país + número, SIN "+", sin espacios ni guiones. Ej: 5491123456789
+const WA = "541124909087";
+// ════════════════════════════════════
+
+// Reemplazar {WA} en todos los links wa.me
+document.querySelectorAll('a[href*="{WA}"]').forEach(a=>{a.href=a.getAttribute('href').replace('{WA}',WA)});
+
+// Filtros catálogo
+let curSize='all', curTipo='all';
+function setSize(btn,v){curSize=v;document.querySelectorAll('[data-size]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');applyFilters()}
+function setTipo(btn,v){curTipo=v;document.querySelectorAll('[data-tipo].chip').forEach(b=>b.classList.remove('active'));btn.classList.add('active');applyFilters()}
+function applyFilters(){
+  const q=(document.getElementById('q').value||'').toLowerCase().trim();
+  let shown=0;
+  document.querySelectorAll('#catGrid .card').forEach(c=>{
+    const sizes=c.dataset.sizes.split(',');
+    const tipo=c.dataset.tipo, search=c.dataset.search;
+    let ok=true;
+    if(curSize!=='all' && !sizes.includes(curSize)) ok=false;
+    if(curTipo!=='all' && tipo!==curTipo) ok=false;
+    if(q && !search.includes(q)) ok=false;
+    c.style.display=ok?'':'none';
+    if(ok)shown++;
+  });
+  document.getElementById('count').textContent=shown+' modelo'+(shown!==1?'s':'');
+  document.getElementById('noRes').style.display=shown?'none':'block';
+}
+
+// FAQ acordeón
+function toggleFaq(btn){
+  const item=btn.closest('.faq-item');
+  const open=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!open)item.classList.add('open');
+}
+applyFilters();
+</script>
+
+<script>
+// ══════════════════════════════════════════════
+// FUENTE DE DATOS: Google Sheets publicado como CSV.
+// Reemplazá SHEET_CSV_URL por el link que te da Sheets en
+// Archivo > Compartir > Publicar en la web > formato CSV.
+// Si el link falla (planilla mal configurada, sin internet, etc.)
+// la web sigue funcionando con la última copia de seguridad guardada abajo.
+// ══════════════════════════════════════════════
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvxLF9NPQlLlKXuickUUkMmBItSU427d7kYUn5LTLf6IHv-_Hp3P74lY01Xe8NLKtVemLElyQxz2iV/pub?gid=1808262141&single=true&output=csv";
+
+const BACKUP_PRODUCTS = [{"sku": "SF-001", "name": "Air Max 1 - negra con blanco", "sizes": [40, 41, 43], "tipo": "Runner", "img": "fotos/SF-001.jpg", "marble": true}, {"sku": "SF-002", "name": "Air Max 1 - Azul con blanco", "sizes": [40, 41, 42, 43], "tipo": "Runner", "img": "fotos/SF-002.jpg", "marble": true}, {"sku": "SF-003", "name": "Air Max - IVO blanca con negro y rojo", "sizes": [41, 42, 43], "tipo": "Runner", "img": "fotos/SF-003.jpg", "marble": true}, {"sku": "SF-004", "name": "Air Max - Azul oscuro", "sizes": [40, 41, 42], "tipo": "Runner", "img": "fotos/SF-004.jpg", "marble": true}, {"sku": "SF-005", "name": "Air Max 1 - azul oscuro con dorado", "sizes": [41, 42, 43], "tipo": "Runner", "img": "fotos/SF-005.jpg", "marble": true}, {"sku": "SF-006", "name": "Nike Air Max IVO - negra y blanco", "sizes": [41, 42, 43], "tipo": "Runner", "img": "fotos/SF-006.jpg", "marble": true}, {"sku": "SF-007", "name": "Air Max 1 - negro con gris gamuza", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-007.jpg", "marble": false}, {"sku": "SF-008", "name": "Air Max 1 - roja", "sizes": [40, 41], "tipo": "Runner", "img": "fotos/SF-008.jpg", "marble": false}, {"sku": "SF-009", "name": "Air Max 1 - rosa", "sizes": [36, 39, 40], "tipo": "Runner", "img": "fotos/SF-009.jpg", "marble": true}, {"sku": "SF-010", "name": "Air Max 1 - petroleo", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-010.jpg", "marble": false}, {"sku": "SF-011", "name": "Air Max 1 - verde", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-011.jpg", "marble": false}, {"sku": "SF-012", "name": "Air Max 1 - violeta", "sizes": [37, 38], "tipo": "Runner", "img": "fotos/SF-012.jpg", "marble": true}, {"sku": "SF-013", "name": "Air Max 1 - total negras", "sizes": [39], "tipo": "Runner", "img": "fotos/SF-013.jpg", "marble": false}, {"sku": "SF-014", "name": "Air Max 1 - blanco supreme", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-014.jpg", "marble": false}, {"sku": "SF-015", "name": "Vapor Max - total negras", "sizes": [40, 41, 42, 43], "tipo": "Runner", "img": "fotos/SF-015.jpg", "marble": false}, {"sku": "SF-016", "name": "Air Max negras", "sizes": [45], "tipo": "Runner", "img": "fotos/SF-016.jpg", "marble": false}, {"sku": "SF-017", "name": "Air Max - corteiz azul y rosa", "sizes": [37, 39], "tipo": "Runner", "img": "fotos/SF-017.jpg", "marble": true}, {"sku": "SF-018", "name": "Air Max 95 - corteiz militar", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-018.jpg", "marble": true}, {"sku": "SF-019", "name": "Air Max 95 - negro con naranja", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-019.jpg", "marble": true}, {"sku": "SF-020", "name": "Air Max 95 - negras gris y rojo", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-020.jpg", "marble": true}, {"sku": "SF-021", "name": "Air Max 95 - todas blancas", "sizes": [38], "tipo": "Runner", "img": "fotos/SF-021.jpg", "marble": false}, {"sku": "SF-022", "name": "Air Max 95 - negras", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-022.jpg", "marble": false}, {"sku": "SF-023", "name": "Air Max 270 - gris con blanco", "sizes": [40, 41, 42, 43, 44], "tipo": "Runner", "img": "fotos/SF-023.jpg", "marble": false}, {"sku": "SF-024", "name": "TN - gris y rojo", "sizes": [40, 41], "tipo": "Runner", "img": "fotos/SF-024.jpg", "marble": false}, {"sku": "SF-025", "name": "Air Max TN - pink", "sizes": [38], "tipo": "Runner", "img": "fotos/SF-025.jpg", "marble": false}, {"sku": "SF-026", "name": "TN NEGRAS", "sizes": [42, 43], "tipo": "Runner", "img": "fotos/SF-026.jpg", "marble": true}, {"sku": "SF-027", "name": "TN - gris y amarillo", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-027.jpg", "marble": false}, {"sku": "SF-028", "name": "Air Max DN 8 - gris con rojo", "sizes": [37, 40], "tipo": "Runner", "img": "fotos/SF-028.jpg", "marble": false}, {"sku": "SF-029", "name": "DN NARANJA", "sizes": [37, 39, 40], "tipo": "Runner", "img": "fotos/SF-029.jpg", "marble": false}, {"sku": "SF-030", "name": "Air Max DN - negras con violeta", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-030.jpg", "marble": false}, {"sku": "SF-031", "name": "DN - arcoiris", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-031.jpg", "marble": false}, {"sku": "SF-032", "name": "Air Max DN - blancas azul y pipa roja", "sizes": [40, 41, 42], "tipo": "Runner", "img": "fotos/SF-032.jpg", "marble": false}, {"sku": "SF-033", "name": "DN - azul con blanco", "sizes": [41], "tipo": "Runner", "img": "fotos/SF-033.jpg", "marble": false}, {"sku": "SF-034", "name": "DN - negras con blanco", "sizes": [36], "tipo": "Runner", "img": "fotos/SF-034.jpg", "marble": false}, {"sku": "SF-035", "name": "DN - blancas", "sizes": [44], "tipo": "Runner", "img": "fotos/SF-035.jpg", "marble": false}, {"sku": "SF-036", "name": "Vapor Max - oreo", "sizes": [36, 40, 42, 43], "tipo": "Runner", "img": "fotos/SF-036.jpg", "marble": true}, {"sku": "SF-037", "name": "Vapor Max - charol talon transparente", "sizes": [40, 41, 42, 43], "tipo": "Runner", "img": "fotos/SF-037.jpg", "marble": false}, {"sku": "SF-038", "name": "Vapor Max - verde con negro", "sizes": [40, 41, 42], "tipo": "Runner", "img": "fotos/SF-038.jpg", "marble": true}, {"sku": "SF-039", "name": "Vapor Max - gris pipa rosada", "sizes": [36, 37, 38, 39, 40], "tipo": "Runner", "img": "fotos/SF-039.jpg", "marble": true}, {"sku": "SF-040", "name": "Vapor Max - gris oscuro", "sizes": [37], "tipo": "Runner", "img": "fotos/SF-040.jpg", "marble": false}, {"sku": "SF-041", "name": "Vapor Max Cebra", "sizes": [36, 37, 38, 44], "tipo": "Runner", "img": "fotos/SF-041.jpg", "marble": false}, {"sku": "SF-042", "name": "Vapor Max - 360 negra con verde", "sizes": [37], "tipo": "Runner", "img": "fotos/SF-042.jpg", "marble": false}, {"sku": "SF-043", "name": "Vapor Max - negra pipa blanca", "sizes": [38], "tipo": "Runner", "img": "fotos/SF-043.jpg", "marble": false}, {"sku": "SF-044", "name": "Vapor Max - cremita", "sizes": [36, 40, 41, 42], "tipo": "Runner", "img": "fotos/SF-044.jpg", "marble": false}, {"sku": "SF-045", "name": "Vapor Max - negra pipa dorada", "sizes": [37], "tipo": "Runner", "img": "fotos/SF-045.jpg", "marble": false}, {"sku": "SF-046", "name": "Vapor Max 360 - cremita", "sizes": [36, 37, 38, 39], "tipo": "Runner", "img": "fotos/SF-046.jpg", "marble": false}, {"sku": "SF-047", "name": "Jordan Retro Cero - negra y amarillo", "sizes": [40, 41, 43], "tipo": "High", "img": "fotos/SF-047.jpg", "marble": true}, {"sku": "SF-048", "name": "Jordan Reto Cero - blanca y dorado", "sizes": [40], "tipo": "High", "img": "fotos/SF-048.jpg", "marble": true}, {"sku": "SF-049", "name": "Jordan Retro 2 - rosa", "sizes": [36, 37, 38], "tipo": "High", "img": "fotos/SF-049.jpg", "marble": false}, {"sku": "SF-050", "name": "Jordan Retro 3 - blancas con celeste", "sizes": [38], "tipo": "High", "img": "fotos/SF-050.jpg", "marble": true}, {"sku": "SF-051", "name": "Jordan Retro 3 - militar", "sizes": [40], "tipo": "High", "img": "fotos/SF-051.jpg", "marble": true}, {"sku": "SF-052", "name": "Jordan Retro 3 - blancas elefan", "sizes": [36, 37, 38, 39, 40, 42, 43, 44], "tipo": "High", "img": "fotos/SF-052.jpg", "marble": true}, {"sku": "SF-053", "name": "Jordan Retro 3 - pink", "sizes": [38, 39], "tipo": "High", "img": "fotos/SF-053.jpg", "marble": false}, {"sku": "SF-054", "name": "Jordan Retro 4 - baige de tela", "sizes": [39, 41], "tipo": "High", "img": "fotos/SF-054.jpg", "marble": false}, {"sku": "SF-055", "name": "Jordan Retro 4 - bike ladrillo", "sizes": [40, 42, 44], "tipo": "High", "img": "fotos/SF-055.jpg", "marble": false}, {"sku": "SF-056", "name": "Jordan Retro 4 - gris", "sizes": [37, 38], "tipo": "High", "img": "fotos/SF-056.jpg", "marble": false}, {"sku": "SF-057", "name": "Jordan Retro 4 - negro y suela gris", "sizes": [37, 38], "tipo": "High", "img": "fotos/SF-057.jpg", "marble": false}, {"sku": "SF-058", "name": "Jordan Retro 4 - blanca con detalle dorado", "sizes": [37, 38], "tipo": "High", "img": "fotos/SF-058.jpg", "marble": false}, {"sku": "SF-059", "name": "Jordan Retro 6 - space jam", "sizes": [40], "tipo": "High", "img": "fotos/SF-059.jpg", "marble": false}, {"sku": "SF-060", "name": "Jordan Retro 11 - blancas yuthi", "sizes": [37, 38, 41, 42], "tipo": "High", "img": "fotos/SF-060.jpg", "marble": false}, {"sku": "SF-061", "name": "Jordan Retro 11 - rosa", "sizes": [36, 37, 39], "tipo": "High", "img": "fotos/SF-061.jpg", "marble": true}, {"sku": "SF-062", "name": "Jordan Retro 11 - negras con logo chapita", "sizes": [38, 40], "tipo": "High", "img": "fotos/SF-062.jpg", "marble": false}, {"sku": "SF-063", "name": "Jordan Retro 11 - azul electrico", "sizes": [40, 41, 42, 43], "tipo": "High", "img": "fotos/SF-063.jpg", "marble": true}, {"sku": "SF-064", "name": "Jordan Retro 11 - gris charol", "sizes": [40, 42], "tipo": "High", "img": "fotos/SF-064.jpg", "marble": false}, {"sku": "SF-065", "name": "Jordan Retro 11 - gris", "sizes": [39], "tipo": "High", "img": "fotos/SF-065.jpg", "marble": true}, {"sku": "SF-066", "name": "Jordan Retro 11 - cherry", "sizes": [44], "tipo": "High", "img": "fotos/SF-066.jpg", "marble": false}, {"sku": "SF-067", "name": "Jordan Retro 11 - Payasito", "sizes": [38], "tipo": "High", "img": "fotos/SF-067.jpg", "marble": false}, {"sku": "SF-068", "name": "Jordan Retro 11 - negras con logo rojo", "sizes": [39], "tipo": "High", "img": "fotos/SF-068.jpg", "marble": false}, {"sku": "SF-069", "name": "Jordan Retro 11 - nehu", "sizes": [36, 44], "tipo": "High", "img": "fotos/SF-069.jpg", "marble": false}, {"sku": "SF-070", "name": "Jordan Retro 13 - celeste y blanco", "sizes": [41, 42, 43], "tipo": "High", "img": "fotos/SF-070.jpg", "marble": false}, {"sku": "SF-071", "name": "Jordan Retro 13 - Naranja", "sizes": [40, 42], "tipo": "High", "img": "fotos/SF-071.jpg", "marble": true}, {"sku": "SF-072", "name": "Jordan Retro 13 - verde y blanco", "sizes": [44], "tipo": "High", "img": "fotos/SF-072.jpg", "marble": false}, {"sku": "SF-073", "name": "Jordan Retro 13 - negro y blanco", "sizes": [41], "tipo": "High", "img": "fotos/SF-073.jpg", "marble": false}, {"sku": "SF-074", "name": "Jordan Retro 13 - negras charol", "sizes": [41], "tipo": "High", "img": "fotos/SF-074.jpg", "marble": false}, {"sku": "SF-075", "name": "Jordan Retro 13 - pink", "sizes": [38], "tipo": "High", "img": "fotos/SF-075.jpg", "marble": false}, {"sku": "SF-076", "name": "Jordan Retro 14 - negras y blanco", "sizes": [43], "tipo": "High", "img": "fotos/SF-076.jpg", "marble": true}, {"sku": "SF-077", "name": "Jordan Retro 14 - blancas con azul", "sizes": [41], "tipo": "High", "img": "fotos/SF-077.jpg", "marble": true}, {"sku": "SF-078", "name": "Jordan Retro 14 - ferrari", "sizes": [42], "tipo": "High", "img": "fotos/SF-078.jpg", "marble": true}, {"sku": "SF-079", "name": "Jordan 1 Mid - negra y gris", "sizes": [40, 42, 43], "tipo": "High", "img": "fotos/SF-079.jpg", "marble": true}, {"sku": "SF-080", "name": "Jordan 1 Mid - negra con pipa gris charol", "sizes": [42, 43], "tipo": "High", "img": "fotos/SF-080.jpg", "marble": true}, {"sku": "SF-081", "name": "Jordan 1 Mid - rosa", "sizes": [39, 40], "tipo": "High", "img": "fotos/SF-081.jpg", "marble": true}, {"sku": "SF-082", "name": "Jordan 1 Mid - dulce de leche", "sizes": [37, 38, 39, 40], "tipo": "High", "img": "fotos/SF-082.jpg", "marble": true}, {"sku": "SF-083", "name": "Jordan 1 Mid - azul charol", "sizes": [40, 41, 42, 43], "tipo": "High", "img": "fotos/SF-083.jpg", "marble": false}, {"sku": "SF-084", "name": "Jordan 1 Mid - plateadas", "sizes": [43], "tipo": "High", "img": "fotos/SF-084.jpg", "marble": false}, {"sku": "SF-085", "name": "Jordan 1 Mid - ruby", "sizes": [37, 41], "tipo": "High", "img": "fotos/SF-085.jpg", "marble": false}, {"sku": "SF-086", "name": "Jordan 1 Mid - chicago logo de metal", "sizes": [40, 41, 42], "tipo": "High", "img": "fotos/SF-086.jpg", "marble": true}, {"sku": "SF-087", "name": "Jordan 1 Mid - chicago de tela", "sizes": [42, 43], "tipo": "High", "img": "fotos/SF-087.jpg", "marble": false}, {"sku": "SF-088", "name": "Jordan 1 Mid - taxi", "sizes": [42], "tipo": "High", "img": "fotos/SF-088.jpg", "marble": false}, {"sku": "SF-089", "name": "Jordan 1 Mid - dorada con blanco", "sizes": [43], "tipo": "High", "img": "fotos/SF-089.jpg", "marble": false}, {"sku": "SF-090", "name": "Jordan 1 Mid - chicago cuero", "sizes": [37], "tipo": "High", "img": "fotos/SF-090.jpg", "marble": false}, {"sku": "SF-091", "name": "Jordan 1 Mid", "sizes": [36, 37, 38, 39, 40], "tipo": "High", "img": "fotos/SF-091.jpg", "marble": false}, {"sku": "SF-092", "name": "Jordan 1 Mid - space jam", "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44], "tipo": "High", "img": "fotos/SF-092.jpg", "marble": true}, {"sku": "SF-093", "name": "Jordan 1 Low - plateada", "sizes": [36, 37, 38, 39, 41, 42], "tipo": "Low", "img": "fotos/SF-093.jpg", "marble": true}, {"sku": "SF-094", "name": "Jordan 1 Low - negra charon", "sizes": [36, 37, 38, 39, 40, 41, 43, 44], "tipo": "Low", "img": "fotos/SF-094.jpg", "marble": true}, {"sku": "SF-095", "name": "Jordan 1 Low - concord charol", "sizes": [40, 41, 42, 43, 44], "tipo": "Low", "img": "fotos/SF-095.jpg", "marble": false}, {"sku": "SF-096", "name": "Jordan 1 Low - negra charon suela roja", "sizes": [43, 44], "tipo": "Low", "img": "fotos/SF-096.jpg", "marble": false}, {"sku": "SF-097", "name": "Jordan 1 Low - negro con dorado charol", "sizes": [36, 39, 42, 43], "tipo": "Low", "img": "fotos/SF-097.jpg", "marble": false}, {"sku": "SF-098", "name": "Jordan LOW 1 - cherry", "sizes": [42], "tipo": "Low", "img": "fotos/SF-098.jpg", "marble": false}, {"sku": "SF-099", "name": "Scorpion - negra con violeta", "sizes": [36, 42, 43, 44], "tipo": "Runner", "img": "fotos/SF-099.jpg", "marble": false}, {"sku": "SF-100", "name": "Scorpion - toda negras", "sizes": [44], "tipo": "Runner", "img": "fotos/SF-100.jpg", "marble": false}, {"sku": "SF-101", "name": "Dunk SB - celeste", "sizes": [38], "tipo": "Low", "img": "fotos/SF-101.jpg", "marble": true}, {"sku": "SF-102", "name": "DUNK - charol negras concord", "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44], "tipo": "Low", "img": "fotos/SF-102.jpg", "marble": true}, {"sku": "SF-103", "name": "Force 1 - charol negras combinadas", "sizes": [44], "tipo": "Low", "img": "fotos/SF-103.jpg", "marble": true}, {"sku": "SF-104", "name": "Force blancas pipa negras", "sizes": [41], "tipo": "Low", "img": "fotos/SF-104.jpg", "marble": false}, {"sku": "SF-105", "name": "Force Air negras letras", "sizes": [38], "tipo": "Low", "img": "fotos/SF-105.jpg", "marble": false}, {"sku": "SF-106", "name": "Force 1 - charol celeste", "sizes": [41, 42], "tipo": "Low", "img": "fotos/SF-106.jpg", "marble": true}, {"sku": "SF-107", "name": "Force el cremita", "sizes": [40], "tipo": "Low", "img": "fotos/SF-107.jpg", "marble": true}, {"sku": "SF-108", "name": "Foce blancas", "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44], "tipo": "Low", "img": "fotos/SF-108.jpg", "marble": true}, {"sku": "SF-109", "name": "Force 1 - charol total negras", "sizes": [40, 41, 42, 43, 44], "tipo": "Low", "img": "fotos/SF-109.jpg", "marble": true}, {"sku": "SF-110", "name": "Force 1 - charol naranja", "sizes": [40, 42], "tipo": "Low", "img": "fotos/SF-110.jpg", "marble": true}, {"sku": "SF-111", "name": "Force 1 - charol gris", "sizes": [40, 42, 43], "tipo": "Low", "img": "fotos/SF-111.jpg", "marble": true}, {"sku": "SF-112", "name": "Force 1 - san valentin", "sizes": [37, 39, 40], "tipo": "Low", "img": "fotos/SF-112.jpg", "marble": false}, {"sku": "SF-113", "name": "Force - botitas blancas", "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44], "tipo": "High", "img": "fotos/SF-113.jpg", "marble": false}, {"sku": "SF-114", "name": "Force - botitas negras", "sizes": [36, 37, 38, 39, 40, 41, 42, 44], "tipo": "High", "img": "fotos/SF-114.jpg", "marble": false}, {"sku": "SF-115", "name": "Force 1 - charol negras y celeste", "sizes": [40], "tipo": "Low", "img": "fotos/SF-115.jpg", "marble": true}, {"sku": "SF-116", "name": "NOCTA NEGRAS", "sizes": [40], "tipo": "Runner", "img": "fotos/SF-116.jpg", "marble": true}, {"sku": "SF-117", "name": "Adidas - super star", "sizes": [43], "tipo": "Low", "img": "fotos/SF-117.jpg", "marble": false}, {"sku": "SF-118", "name": "Adidas - super star negras mati", "sizes": [36, 38, 40], "tipo": "Low", "img": "fotos/SF-118.jpg", "marble": true}, {"sku": "SF-119", "name": "Luis Vuitton - blancas con negro", "sizes": [36], "tipo": "Low", "img": "fotos/SF-119.jpg", "marble": false}, {"sku": "SF-120", "name": "Luis Vuitton - todas blancas", "sizes": [40, 43], "tipo": "Low", "img": "fotos/SF-120.jpg", "marble": false}, {"sku": "SF-121", "name": "Amiri skeletor verde", "sizes": [41], "tipo": "Low", "img": "fotos/SF-121.jpg", "marble": false}, {"sku": "SF-122", "name": "Amiri skeletor azul", "sizes": [40], "tipo": "Low", "img": "fotos/SF-122.jpg", "marble": false}, {"sku": "SF-123", "name": "Amiri Blancas y negro", "sizes": [37, 38, 39], "tipo": "Low", "img": "fotos/SF-123.jpg", "marble": false}, {"sku": "SF-124", "name": "Amiri - negras con suela blancas", "sizes": [42], "tipo": "Low", "img": "fotos/SF-124.jpg", "marble": false}, {"sku": "SF-125", "name": "Amiri Blancas", "sizes": [39], "tipo": "Low", "img": "fotos/SF-125.jpg", "marble": false}, {"sku": "SF-126", "name": "Tommy blancas Letras", "sizes": [40, 41, 42], "tipo": "Low", "img": "fotos/SF-126.jpg", "marble": false}, {"sku": "SF-127", "name": "Jordan 1 Low - chicago nehuen", "sizes": [41, 42, 43], "tipo": "Low", "img": "fotos/SF-127.jpg", "marble": false}, {"sku": "SF-128", "name": "Jordan 1 Low - gris pipa negra", "sizes": [40, 41, 42], "tipo": "Low", "img": "fotos/SF-128.jpg", "marble": false}, {"sku": "SF-129", "name": "Jordan 1 Low - mujer de jeans", "sizes": [37, 38, 39], "tipo": "Low", "img": "fotos/SF-129.jpg", "marble": false}];
+
+function parseCSV(text){
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i=0;i<text.length;i++){
+    const c = text[i];
+    if (inQuotes){
+      if (c === '"' && text[i+1] === '"'){ field+='"'; i++; }
+      else if (c === '"'){ inQuotes=false; }
+      else field += c;
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ','){ row.push(field); field=''; }
+      else if (c === '\n' || c === '\r'){
+        if (c === '\r' && text[i+1] === '\n') i++;
+        row.push(field); field=''; rows.push(row); row=[];
+      } else field += c;
+    }
+  }
+  if (field.length || row.length){ row.push(field); rows.push(row); }
+  return rows.filter(r => r.length>1 || r[0] !== '');
+}
+
+function rowsToProducts(rows){
+  const [header, ...data] = rows;
+  const idx = name => header.findIndex(h => h.trim().toLowerCase() === name);
+  const iSku=idx('sku'), iName=idx('nombre'), iTipo=idx('tipo'),
+        iTalles=idx('talles'), iMostrar=idx('mostrar'), iFoto=idx('foto');
+  return data.filter(r => r[iSku] && r[iSku].trim())
+    .map(r => ({
+      sku: r[iSku].trim(),
+      name: r[iName] ? r[iName].trim() : r[iSku].trim(),
+      tipo: r[iTipo] ? r[iTipo].trim() : 'Low',
+      sizes: (r[iTalles]||'').split(',').map(s=>parseInt(s.trim())).filter(n=>!isNaN(n)),
+      mostrar: (r[iMostrar]||'SI').trim().toUpperCase() !== 'NO',
+      img: r[iFoto] ? r[iFoto].trim() : ''
+    }))
+    .filter(p => p.mostrar && p.sizes.length);
+}
+
+function sizesTxt(sizes){
+  return sizes.length>1 ? `del ${Math.min(...sizes)} al ${Math.max(...sizes)}` : `${sizes[0]}`;
+}
+
+function waHref(p){
+  const nm=p.name, tp=p.tipo, sku=p.sku;
+  let t;
+  if (tp==='High') t = `👑 ¡Hola $omo$ Flow! Me flashearon las ${nm} (${sku}) 🔥 ¿Tenés stock? Decime qué talles hay 👟`;
+  else if (tp==='Runner') t = `👑 ¡Hola $omo$ Flow! Ando buscando unas running y me gustaron las ${nm} (${sku}) 🏃 ¿Qué talles tenés? 👟`;
+  else t = `👑 ¡Hola $omo$ Flow! Vi las ${nm} (${sku}) en la web y las quiero 🔥 ¿Qué talles tenés? 👟`;
+  return `https://api.whatsapp.com/send?phone=${WA}&text=${encodeURIComponent(t)}`;
+}
+
+function cardHTML(p, badge){
+  const b = badge ? `<span class="badge">${badge}</span>` : '';
+  return `<article class="card" data-tipo="${p.tipo}" data-sizes="${p.sizes.join(',')}" data-search="${p.sku.toLowerCase()} ${p.name.toLowerCase()}">
+    <div class="card-img">${b}<img src="${p.img}" alt="${p.name}" loading="lazy"></div>
+    <div class="card-body">
+      <span class="card-meta">${p.tipo} · ${p.sku}</span>
+      <h3 class="card-name">${p.name}</h3>
+      <div class="card-sizes">Talles: <b>${sizesTxt(p.sizes)}</b></div>
+      <a target="_blank" class="card-wa" href="${waHref(p)}">◉ Consultar por WhatsApp</a>
+    </div></article>`;
+}
+
+function sectionHTML(id, kick, title, sub, items, accent, drip, bg, badge){
+  const cards = items.map(p => cardHTML(p, badge)).join('');
+  return `<section id="${id}" class="feat" style="background:${bg}">
+  <div class="wrap"><div class="sec-head"><span class="kick">${kick}</span>
+  <h2 class="drip-title" style="--accent:${accent}">${title}</h2>
+  <p class="sec-sub">${sub}</p></div>
+  <div class="grid">${cards}</div></div></section>
+  <div class="drip-sep" style="background:${drip}"></div>`;
+}
+
+function render(products){
+  // Destacadas: con foto de mármol si existe el dato, si no, las primeras
+  const marble = products.filter(p => /SF-0(0[1-9]|1[0-9]|2[0-9])/.test(p.sku)); // fallback simple
+  const destacadas = products.slice(0,8);
+  const jordans = products.filter(p => /jordan|amiri/i.test(p.name)).slice(0,8);
+  const runners = products.filter(p => p.tipo === 'Runner').slice(0,8);
+  const highs = products.filter(p => p.tipo === 'High').slice(0,8);
+
+  document.getElementById('destacadas-wrap').outerHTML = sectionHTML('destacadas','Lo que se lleva la corona','Destacadas de la semana','Los modelos que más están saliendo. Fotos reales, stock que rota toda la semana.', destacadas, 'var(--lime)','var(--lime)','transparent','TOP');
+  document.getElementById('masvendido-wrap').outerHTML = sectionHTML('masvendido','Los que más salen','Lo más vendido','Jordan, AMIRI y los modelos que más nos piden. Cuando se van, se van.', jordans.length?jordans:products.slice(8,16), 'var(--gold)','var(--gold)','var(--deep)','HOT');
+  document.getElementById('running-wrap').outerHTML = sectionHTML('running','Para volar','Zapatillas Running','Air Max, Vapor Max, DN y TN para el día a día.', runners, 'var(--lime)','var(--lime)','transparent',null);
+  document.getElementById('high-wrap').outerHTML = sectionHTML('high','Caña alta','High / Botitas','Jordan altas y botitas para pisar fuerte.', highs, 'var(--gold)','var(--gold)','var(--deep)',null);
+
+  document.getElementById('catGrid').innerHTML = products.map(p => cardHTML(p)).join('');
+
+  // reconectar botones de WhatsApp genericos que usaban {WA}
+  document.querySelectorAll('a[href*="{WA}"]').forEach(a=>{a.href=a.getAttribute('href').replace('{WA}',WA)});
+
+  applyFilters();
+}
+
+async function loadProducts(){
+  try{
+    const res = await fetch(SHEET_CSV_URL, {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const text = await res.text();
+    const products = rowsToProducts(parseCSV(text));
+    if (!products.length) throw new Error('CSV vacío o mal formado');
+    render(products);
+  } catch(err){
+    console.warn('No se pudo leer la planilla de Google Sheets, usando copia de seguridad local.', err);
+    render(BACKUP_PRODUCTS.filter(p=>p.sizes && p.sizes.length));
+  }
+}
+
+loadProducts();
+</script>
+</body>
+</html>
